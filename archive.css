@@ -1,0 +1,39 @@
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-card {
+  position: relative;
+  margin: 24px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: /* 1dp */
+    0px 2px 1px -1px rgba(0,0,0,0.2),
+    0px 1px 1px 0px rgba(0,0,0,0.14),
+    0px 1px 3px 0px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+.post-link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.post-card-title {
+  font-size: 24px;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.post-card-content {
+  margin: 0 0 8px;
+  font-size: 14px;
+  opacity: .54;
+}

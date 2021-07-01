@@ -1,0 +1,50 @@
+.paginator-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.paginator {
+  margin-bottom: 24px;
+  display: flex;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: /* 1dp */
+    0px 2px 1px -1px rgba(0,0,0,0.2),
+    0px 1px 1px 0px rgba(0,0,0,0.14),
+    0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.paginator-link {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.paginator-link.disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.paginator-input-wrap {
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid #2196f3;
+  align-items: center;
+}
+
+.paginator-input,
+.paginator-label {
+  width: 36px;
+  text-align: center;
+}
+
+.paginator-input {
+  border: none;
+  align-self: stretch;
+}
+
+.paginator-slash::before {
+  content: '/';
+}
