@@ -1,0 +1,150 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+#main {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+#main > * {
+  width: 100%;
+  overflow: hidden;
+  border-right: 1px solid rgba(0,0,0,.12);
+}
+#main > :last-child {
+  border-right: none;
+}
+.CodeMirror {
+  height: 100%;
+}
+[type=file] {
+  display: none;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,.12);
+  padding: 0 4px;
+  background-color: #eee;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+}
+.button:hover {
+  background-color: #ddd;
+}
+.button:active {
+  background-color: #ccc;
+}
+.checkbox {
+  padding-right: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.checkbox [type=checkbox] {
+  margin: 4px;
+}
+.entry {
+  border: 1px solid rgba(0,0,0,.12);
+  padding: 0 4px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.group {
+  display: flex;
+}
+.group .button {
+  border-left: none;
+}
+.group .button:first-child {
+  border-left: 1px solid rgba(0,0,0,.12);
+}
+#toolbar {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+#toolbar .button {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+#filename {
+  flex-grow: 1;
+  border-left: 1px solid rgba(0,0,0,.12);
+  padding: 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#filename.dirty::before {
+  content: "*";
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.5);
+}
+.dialog {
+  background-color: #fff;
+  border: 1px solid #888;
+  padding: 16px;
+}
+.list {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding-left: 0;
+  overflow-y: auto;
+  list-style: none;
+  border: 1px solid rgba(0,0,0,.12);
+  font-size: 14px;
+  font-weight: 500;
+}
+.list-group {
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.list-button {
+  border: none;
+  border-left: 1px solid rgba(0,0,0,.12);
+  background: none;
+  user-select: none;
+  padding: 0 4px;
+}
+.list-button:first-child {
+  border-left: none;
+  flex-grow: 1;
+  text-align: left;
+}
+.list-button:hover {
+  background-color: #eee;
+}
+.list-button:active {
+  background-color: #ddd;
+}
+.dialog-text {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: pre;
+}
+.dialog-entry {
+  display: block;
+  width: 300px;
+}
+.dialog-buttons {
+  margin-top: 16px;
+  float: right;
+}

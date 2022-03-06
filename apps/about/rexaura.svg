@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 6.3499999 6.3500002"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter4260"
+       x="-0.058823535"
+       y="-0.067499749"
+       width="1.1176471"
+       height="1.1350001">
+      <feTurbulence
+         baseFrequency="0.14"
+         numOctaves="1"
+         type="fractalNoise"
+         id="feTurbulence4244" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -3.5 "
+         result="result5"
+         id="feColorMatrix4246" />
+      <feComposite
+         in2="result5"
+         operator="in"
+         in="SourceGraphic"
+         result="result6"
+         id="feComposite4248" />
+      <feMorphology
+         result="result3"
+         radius="5"
+         operator="dilate"
+         in="result6"
+         id="feMorphology4250" />
+      <feDisplacementMap
+         result="result4"
+         scale="0"
+         yChannelSelector="A"
+         xChannelSelector="R"
+         in="result3"
+         in2="result3"
+         id="feDisplacementMap4252" />
+      <feComposite
+         in2="result4"
+         operator="arithmetic"
+         result="result2"
+         k1="1"
+         k3="1"
+         id="feComposite4254" />
+      <feBlend
+         mode="darken"
+         in="result2"
+         in2="result2"
+         id="feBlend4256" />
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="2 0 0 0 1 0 0 0 -1 "
+         targetX="1"
+         targetY="1"
+         divisor="2"
+         edgeMode="duplicate"
+         id="feConvolveMatrix4258" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="path860"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 9.5292969,3.9042969 -3.3945313,5.09375 H 0 V 15 H 6.1347656 L 9.5292969,20.09375 16.166016,18.986328 15.833984,17.015625 10.474609,17.908203 7.2050781,13 H 17 V 10.998047 H 7.2050781 L 10.474609,6.0898438 15.833984,6.9824219 16.166016,5.0117188 Z M 16.974609,6.2363281 16.654297,8.1347656 10.947266,7.1835938 9.0722656,10.003906 h 8.9238284 v 3.992188 H 9.0722656 l 1.8750004,2.820312 5.707031,-0.951172 0.320312,1.896485 A 6.9999999,6.9999999 0 0 0 20,12 6.9999999,6.9999999 0 0 0 16.974609,6.2363281 Z"
+       transform="scale(0.26458333)" />
+  </g>
+</svg>
